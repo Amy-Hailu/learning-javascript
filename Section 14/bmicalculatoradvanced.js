@@ -18,9 +18,11 @@ function bmiCalculator(weight, height) {
     else {
         return "Your BMI is, " + bmi + " so you are overwieght.";
     }
-
+        return void
 }
-var bmiMessage = bmiCalculator(65,1.8);
+var bmiMessage;
+
+bmiMessage = bmiCalculator(65,1.8);
 console.log( bmiMessage)
 
 
