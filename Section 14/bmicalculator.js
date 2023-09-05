@@ -7,12 +7,30 @@ function bmiCalculator(weight, height) {
 // set bmi variable to calculate bmi solution
     var bmi = Math.floor(weight / actualHeight);
 // returns bmi variable as a output with return key word
-    return bmi;
-    // clean up code is below
-    // return  Math.floor(weight / Math.pow(height,2))
+    if (bmi < 18.5) {
+
+        return "Your BMI is " + bmi + " so you are underweight";
+    }
+    if (bmi >= 18.5 && bmi <= 24.9) {
+
+        return "Your BMI is " + bmi + " so you have a normal weight";
+    }
+    else {
+        return "Your BMI is " + bmi + " so you are overwieght";
+    }
+
 }
-var bmi = bmiCalculator(65,1.8);
-console.log( "Your BMI is " + bmi)
+var bmiMessage = bmiCalculator(65,1.8);
+console.log( bmiMessage)
+
+
+
+
+
+
+
+
+
 
 /*If my weight is 65kg and my height is 1.8m, I should be able to call your function like this:
 
