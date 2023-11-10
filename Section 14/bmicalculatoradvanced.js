@@ -20,9 +20,7 @@ function bmiCalculator(weight, height) {
     }
         return void
 }
-var bmiMessage;
-
-bmiMessage = bmiCalculator(65,1.8);
+bmiCalculator(65,1.8);
 console.log( bmiMessage)
 
 

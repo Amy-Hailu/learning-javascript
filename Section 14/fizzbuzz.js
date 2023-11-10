@@ -1,9 +1,38 @@
-var outPut = [];
-var count= 1;
+var output = [];
+var count = 1;
+ 
 
- function fizzBuzz(){
+function fizzBuzz(){
 
-  outPut.push(count);
-  console.log(outPut);
+     if(count % 3 === 0 && count % 5 === 0){
+        output.push("fizzbuzz");
+    }
+      
+    else if(count % 3 === 0){
+        output.push("fizz");
+    }
+
+    else if(count % 5 === 0){
+        output.push("buzz");
+        
+    }
+  
+    else {
+        output.push(count);
+    }
+        
+    //output.push(count);
+    count++;
+    console.log(output);
+
+
 }
-fizzBuzz();
+
+ 
+ 
+
+
+
+
+
+
